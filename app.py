@@ -54,6 +54,11 @@ while True:
         for index, team in enumerate(teams[0], 1):
             print(f'{index}.) {team}')
         print(f'{len(teams_c) + 1}.) Quit')
+    elif option == "2":
+        break
+    else:
+        print("\nPlease enter a valid option")
+        continue
     
 
     def exp(team):
@@ -109,12 +114,10 @@ while True:
             print_team(option)
             break
         elif option == "4":
-            print("\nThanks for using our stats tool! Goodbye")
             break
         else:
             print("\nPlease enter a valid numerical option  ")
             continue
-
     
 
     while True:
